@@ -166,6 +166,37 @@
 
 
 														<!-- Highlight -->
+
+                                                                                                                        <style>
+															/* Default: 2x2 grid for large screens */
+															.student-grid {
+															  display: grid;
+															  grid-template-columns: repeat(2, 1fr);
+															  gap: 20px;
+															}
+														  
+															/* On small screens (below 768px), make it 1 column */
+															@media (max-width: 768px) {
+															  .student-grid {
+																grid-template-columns: repeat(1, 1fr);
+															  }
+															}
+														  
+															.student-card {
+															  display: flex;
+															  gap: 15px;
+															  align-items: flex-start;
+															}
+														  
+															.student-card img {
+															  width: 150px;
+															  height: 150px;
+															  object-fit: cover;
+															}
+														  </style>
+
+
+													
 														<h3>Undergraduate Students</h3>
 														<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
 														
